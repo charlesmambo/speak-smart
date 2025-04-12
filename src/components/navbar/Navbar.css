@@ -1,0 +1,33 @@
+nav {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+    padding: 1.1rem  4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item-container,
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-items{
+    gap: 3rem;
+}
+
+.nav-items li a{
+   text-transform: capitalize;
+   color: #EE552C;
+   font-weight: 500;
+   font-size: 1.1rem;
+}
+
+.logo-container{
+    width: 80px;
+    cursor: pointer;
+}
+.logo-container img{
+    width: 100%;
+}

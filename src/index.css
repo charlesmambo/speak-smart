@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+ border: none;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+ font-family: "DM Sans", sans-serif;
+ /* font-family: "Aclonica", sans-serif; */
+}
+
+body{
+    font-size: 1rem;
+    background-color: #F8FAFC;
+}
