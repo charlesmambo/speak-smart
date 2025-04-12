@@ -51,6 +51,7 @@ nav {
     border-top-left-radius: 1rem;
     border-top: 3px solid #EE552C;
     display: none;
+    background-color: #FFFEFD;
 }
 
 .mobile-items{

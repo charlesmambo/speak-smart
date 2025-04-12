@@ -1,17 +1,24 @@
-.primary-btn {
+.arrow-btn{
     background-color: #304560;
-    color: #f1f1f1;
-    padding: 0.7rem 1rem;
+    color: #ececec;
+    padding: 0.7rem;
     text-align: center;
     border-radius: 2rem;
-    font-size: 1.02rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-transform: capitalize;
+    width: fit-content;
+    display: flex;
 }
-
-.primary-btn:hover {
+.arrow-btn:hover{
     background-color: #344b64;
     transform: scale(1.02);
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow-btn{
+        padding: 0.9rem;
+    } 
 }

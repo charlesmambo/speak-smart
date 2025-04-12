@@ -1,0 +1,76 @@
+.intro{
+    padding: 2rem  4.5rem;
+    min-height: 45vh;
+    justify-content: center;
+    gap: 8rem;
+}
+.intro,
+.intro-content{
+    display: flex;
+    align-items: center;
+}
+.intro-content{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 34vw;
+}
+.intro-heading {
+ width: 20vw;
+}
+.intro-heading h1 {
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 2.9rem;
+}
+
+.intro-content p{
+    color: #ee562cd6;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+
+.intro-btn{
+    padding: 0.8rem 1.9rem;
+}
+.intro-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro{
+        padding: 2rem  1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
+    }
+    .intro-heading,
+    .intro-content {
+        width: 90vw;
+     }
+       .intro-heading h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .intro-content p{
+     text-align: center;
+    }
+    .intro-content{
+      justify-content: center;
+      align-items: center;
+    }
+    .intro-btn-container{
+        margin-top: 0.6rem;
+    }
+
+    .intro-btn {
+        width: 52vw;
+        padding: 0.9rem;
+        font-size: 1.1rem;
+    }
+ }
