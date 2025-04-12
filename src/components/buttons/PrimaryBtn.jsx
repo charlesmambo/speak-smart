@@ -3,11 +3,9 @@ import '../buttons/PrimaryBtn.css';
 
 const PrimaryBtn = ({ text = "Click Me", onClick, className = "" }) => {
   return (
-    <div className={`primary-btn ${className}`}>
-      <button onClick={onClick}>
-        {text}
-      </button>
-    </div>
+    <button className={`primary-btn ${className}`} onClick={onClick}>
+      {text}
+    </button>
   );
 };
 

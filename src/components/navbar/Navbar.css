@@ -4,8 +4,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
-
 .nav-item-container,
 .nav-items{
     display: flex;
@@ -31,3 +31,98 @@ nav {
 .logo-container img{
     width: 100%;
 }
+
+/* Mobile Navbar */
+.mobile-navbar {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw; 
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+    padding: 1.7rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+    border-radius: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top: 3px solid #EE552C;
+    display: none;
+}
+
+.mobile-items{
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.mobile-items li {
+    width: 20vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-items li:hover {
+    background-color: #30456034;
+    padding: 0.39rem 0;
+}
+
+.mobile-toggle-btn{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.nav-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.open-nav{
+    color: #EE552C;
+    font-size: 2rem;
+}
+.close-icon{
+    color: rgb(220, 16, 16);
+    box-shadow: rgba(0, 0, 0, 0) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 2rem;
+}
+.mobile-close-btn{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 1.1rem  1.5rem;
+    }
+    .logo-container{
+        width: 70px;
+        cursor: pointer;
+    }
+    .nav-item-container{
+        display: none;
+    }
+    .mobile-navbar {
+        width: 90vw; 
+        top: 7.1rem;
+        display: block;
+    }
+    .ctc-btn-container{
+        margin-top: 1rem;
+    }
+    .mobile-btn{
+        width: 53vw;
+    }
+    .mobile-toggle-btn{
+        display: flex;
+        align-items: center;
+        display: block !important;
+    }
+    .mobile-items li {
+        width: 90vw;
+    }
+  }
