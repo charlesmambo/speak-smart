@@ -22,10 +22,10 @@ const About = () => {
                     </div>
                 </div>
         
-                <div className="abt-content-wrapper">
+                <div className="abt-content-wrapper bottom-wrapper">
                     <div className="abt-content">
                         <p>At Speak Smart Tutoring , we are ambitious about helping students overcome academic challenges and develop skills that will serve them both in school and beyond. We believe in not just improving grades but nurturing a genuine understanding of subjects and a passion for learning . We are committed to working with students patiently, diligently and effectively, ensuring they get the support they need in every lesson. </p>
-                        
+
                         <div className="abt-btns">
                             <PrimaryBtn text="book demo" className="intro-btn" />
                             <ArrowBtn/>

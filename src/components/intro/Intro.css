@@ -6,7 +6,7 @@
 .intro{
     padding: 2rem  4.5rem;
     justify-content: space-between;
-    gap: 8rem;
+    gap: 7.8rem;
 }
 .intro,
 .intro-content{
@@ -76,7 +76,7 @@
     }
 
     .intro-btn {
-        width: 52vw;
+        width: 58vw;
         padding: 0.9rem;
         font-size: 1.1rem;
     }

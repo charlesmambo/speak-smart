@@ -39,3 +39,28 @@
     gap: 0.3rem;
     margin-top: 1.1rem;
 }
+@media only screen and (max-width: 600px) {
+    .abt{
+        padding: 2rem  1.5rem;
+    }
+    .abt-content-wrapper{
+        margin-top: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        text-align: center;
+    } 
+    .abt-content{
+        width: 100%;
+    }
+    .bottom-wrapper{
+        margin-top: 2rem;  
+    }
+    .abt-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
