@@ -1,0 +1,41 @@
+.abt{
+    padding: 3rem  4.5rem; 
+}
+
+.abt-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.abt-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+}
+
+.abt-heading img{
+    width: 300px;
+   }
+.abt-content-wrapper{
+    margin-top: 2.2rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 1.1rem;
+}
+.abt-content{
+    color: #1e2d41;
+    width: 50%;
+}
+.abt-content h3{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+.abt-btns{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 1.1rem;
+}
