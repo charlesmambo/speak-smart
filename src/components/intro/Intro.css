@@ -1,7 +1,11 @@
+.intro-wrapper{
+    background-color: #ee562c0a;
+    padding-top: 4rem;
+    overflow: hidden;
+}
 .intro{
     padding: 2rem  4.5rem;
-    min-height: 45vh;
-    justify-content: center;
+    justify-content: space-between;
     gap: 8rem;
 }
 .intro,
@@ -13,16 +17,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    width: 34vw;
+    width: 52vw;
 }
 .intro-heading {
- width: 20vw;
+ width: 30vw;
 }
 .intro-heading h1 {
     font-family: "Aclonica", sans-serif; 
     font-weight: 500;
     color: #304560;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
 }
 
 .intro-content p{
@@ -42,6 +46,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .intro-wrapper{
+        padding-top: 0rem;
+    }
     .intro{
         padding: 2rem  1.5rem;
         flex-direction: column;

@@ -2,9 +2,11 @@ import React from 'react'
 import '../intro/Intro.css'
 import PrimaryBtn from '../buttons/primaryBtn'
 import ArrowBtn from '../arrowBtn/ArrowBtn'
+import Hero from '../hero/Hero'
 
 const Intro = () => {
   return (
+    <div className='intro-wrapper'>
     <div className='intro'>
       <div className="intro-heading">
         <h1>Personalized Tutoring That Goes Beyond Grades</h1>
@@ -18,6 +20,8 @@ const Intro = () => {
            <ArrowBtn/>
         </div>
       </div>
+    </div>
+    <Hero/>
     </div>
   )
 }

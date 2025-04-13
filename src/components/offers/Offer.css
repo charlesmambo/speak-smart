@@ -1,0 +1,67 @@
+.offers{
+    padding: 3rem  4.5rem;
+}
+
+.offere-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.offere-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+}
+.offere-heading img{
+ width: 300px;
+}
+
+.offers-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.1rem;
+    margin-top: 2.2rem;
+}
+.bottom-grid{
+    margin-top: 1.2rem;  
+}
+.offer-content{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF;
+    padding: 1.2rem;
+}
+.offer-content h3{
+margin-bottom: 0.4rem;
+color: #1e2d41;
+}
+.offer-content p{
+color: #1e2d41;
+}
+
+.offer-img{
+padding: 0.5rem;
+width: 30px;
+border-radius: 50%;
+display: flex;
+margin-bottom: 0.6rem;
+align-items: center;
+justify-content: center;
+}
+.offer-content img{
+width: 100%;
+}
+.pl{
+    background-color: #FFCD29;
+}
+.se{
+    background-color: #EE552C;
+}
+.fi{
+    background-color: #304560;
+}
+.mt{
+    background-color: #14AE5C;
+}
