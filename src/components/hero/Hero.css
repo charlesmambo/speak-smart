@@ -58,14 +58,14 @@ gap: 0.01rem;
 .yellow-box,
 .grey-box{
         width: 10vw;
-        min-width: 140px !important;
+        min-width: 162px !important;
         border-bottom-left-radius: 2rem;
         border-top-right-radius: 2.5rem;
     } 
     .orange-box{
         background-color: #EE552C;
         width: 90px;
-        min-width: 80px !important;
+        min-width: 90px !important;
         border-radius: 50%;
         margin-left: -0rem;
     } 
