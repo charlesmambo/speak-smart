@@ -1,0 +1,60 @@
+.feedback{
+        padding: 3rem  0;
+        background-color: #EDEDED;
+}
+.feedback-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #304560;
+    gap: 0.2rem;
+}
+
+.feedback-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+}
+.feedback-heading p{
+   width: 40vw;
+   text-align: center;
+}
+
+.feedback-cards-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.feedback-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF;
+    width: 35vw;
+    padding: 1.5rem;
+    color: #304560;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-height: 200px;
+}
+.card-text{
+   color: #EE552C; 
+   font-size: 0.86rem;
+}
+.feedback-rate{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 0.2rem;
+}
+.feedback-rate p{
+color: #707a88;
+}
+.stars{
+  color: #FFCD29;  
+  display: flex;
+  align-items: center;
+}

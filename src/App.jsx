@@ -6,6 +6,7 @@ import Offer from './components/offers/Offer'
 import About from './components/about/About'
 import Improve from './components/improve/Improve'
 import Course from './components/course/Course'
+import Feedback from './components/feedback/Feedback'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <About/>
      <Improve/>
      <Course/>
+     <Feedback/>
     </>
   )
 }
