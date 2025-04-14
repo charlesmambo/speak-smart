@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../navbar/Navbar.css'
-import PrimaryBtn from '../buttons/primaryBtn';
+import PrimaryBtn from '../buttons/PrimaryBtn';
 import LOGO from '../../assets/logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
