@@ -1,0 +1,187 @@
+.improve{
+    padding: 3rem  4.5rem;
+    background-color: #EDEDED;
+    padding-bottom: 5rem;
+}
+
+.improve-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+}
+
+.improve-heading img{
+    width:190px;
+}
+.improve-cards-container{
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    justify-content: center;
+}
+.ac-bottom-box{
+    margin-top: 1.5rem;
+    gap: 1.6rem;
+}
+
+@keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0) rotate(var(--rotate));
+    }
+    50% {
+      transform: translateY(-2px) rotate(var(--rotate));
+    }
+  }
+  
+  .academics,
+  .extended,
+  .arts,
+  .hobbies {
+    animation: slowBounce 3s ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+  
+  /* Individual rotations and delays */
+  .academics {
+    --rotate: -18deg;
+    --delay: 0s;
+  }
+  
+  .extended {
+    --rotate: 18deg;
+    --delay: 0.5s;
+  }
+  
+  .arts {
+    --rotate: 18deg;
+    --delay: 1s;
+  }
+  
+  .hobbies {
+    --rotate: -18deg;
+    --delay: 1.5s;
+    margin-top: 2rem;
+  }
+  
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF;
+    width: 27vw;
+    padding: 1.5rem;
+    color: #304560;
+    display: flex;
+    flex-direction: column;
+}
+.card h4{
+ margin-top: 0.4rem;
+}
+.card p{
+ margin-top: 0.4rem;
+}
+
+.card-img{
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    align-self: self-end;
+}
+.card-img img{
+    width: 100%;
+}
+.ac-img{
+   background-color: #EE552C; 
+}
+.ext-img{
+   background-color: #106120; 
+}
+.art-img{
+   background-color: #FFCD29; 
+}
+.hb-img{
+   background-color: #304560; 
+}
+
+@media only screen and (max-width: 600px){
+  @keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0) rotate(var(--rotate));
+    }
+    50% {
+      transform: translateY(-0px) rotate(var(--rotate));
+    }
+  }
+  
+  .academics,
+  .extended,
+  .arts,
+  .hobbies {
+    animation: slowBounce 3s ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+  
+  /* Individual rotations and delays */
+  .academics {
+    --rotate: -0deg;
+    --delay: 0s;
+  }
+  
+  .extended {
+    --rotate: 0deg;
+    --delay: 0.5s;
+  }
+  
+  .arts {
+    --rotate: 0deg;
+    --delay: 1s;
+  }
+  
+  .hobbies {
+    --rotate: -0deg;
+    --delay: 1.5s;
+    margin-top: 0rem;
+  }
+  .improve-cards-container{
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ac-bottom-box{
+    margin-top: 1.1rem;
+    gap: 1.1rem;
+}
+.card{
+  width: 100%;
+}
+.improve{
+  padding: 2rem  1.5rem;
+}
+.improve-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+}
+
+@media screen and (min-width: 1324px) {
+    .ac-bottom-box{
+        margin-top: 4.8rem;
+        gap: 1.6rem;
+    }
+    .card{
+      width: 20vw;
+      padding: 1.5rem;
+  }
+  .improve{
+    padding: 3rem  4.5rem;
+    background-color: #EDEDED;
+    padding-bottom: 6rem;
+}
+  }
+  

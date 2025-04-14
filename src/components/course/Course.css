@@ -1,0 +1,64 @@
+.course{
+    padding: 2rem  4.5rem;
+}
+.course-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+}
+.course-heading img{
+width: 350px;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.course-card{
+ display: flex;
+ gap: 0.8rem;
+}
+
+.course-number{
+    color: #304560; 
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2.7px solid #14AE5C;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+}
+
+.div-two{
+    border: 2.7px solid #EE552C; 
+    margin-left: 5rem;  
+}
+.div-three{
+    border: 2.7px solid #FFCD29;  
+    margin-left: 10rem;      
+}
+.div-four{
+    border: 2.7px solid #3771C8;  
+    margin-left: 15rem;     
+}
+
+.course-card-content{
+    color: #304560; 
+    width: 22vw;
+}
+.course-card-content p{
+  font-size: 0.86rem;
+  margin-top: 0.2rem;
+}
