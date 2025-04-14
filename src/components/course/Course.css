@@ -62,3 +62,28 @@ width: 350px;
   font-size: 0.86rem;
   margin-top: 0.2rem;
 }
+@media only screen and (max-width: 600px){
+    .course{
+        padding: 2rem  1.5rem;
+    }
+
+    .course-card-content{
+        width: 68vw;
+    }
+
+    .div-two{
+        margin-left: 0rem;  
+    }
+    .div-three{
+        margin-left: 0rem;      
+    }
+    .div-four{
+        margin-left: 0rem;     
+    }
+    .course-card-content p{
+        font-size: 1rem;
+      } 
+      .course-content{
+        margin-top: 2rem;
+    }
+}
