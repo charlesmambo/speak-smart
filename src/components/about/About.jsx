@@ -1,7 +1,7 @@
 import React from 'react';
 import '../about/About.css';
 import IMG from '../../assets/img4.png';
-import PrimaryBtn from '../buttons/primaryBtn';
+import PrimaryBtn from '../buttons/PrimaryBtn';
 import ArrowBtn from '../arrowBtn/ArrowBtn';
 
 const About = () => {

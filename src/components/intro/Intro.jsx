@@ -1,6 +1,6 @@
 import React from 'react'
 import '../intro/Intro.css'
-import PrimaryBtn from '../buttons/primaryBtn'
+import PrimaryBtn from '../buttons/PrimaryBtn'
 import ArrowBtn from '../arrowBtn/ArrowBtn'
 import Hero from '../hero/Hero'
 
