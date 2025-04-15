@@ -9,6 +9,7 @@ import Course from './components/course/Course'
 import Feedback from './components/feedback/Feedback'
 import Qn from './components/qn/Qn'
 import Contact from './components/contact/Contact'
+import Divider from './components/divider/Divider'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
      <Feedback/>
      <Qn/>
      <Contact/>
+     <Divider/>
     </>
   )
 }
