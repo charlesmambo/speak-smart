@@ -8,6 +8,7 @@ import Improve from './components/improve/Improve'
 import Course from './components/course/Course'
 import Feedback from './components/feedback/Feedback'
 import Qn from './components/qn/Qn'
+import Contact from './components/contact/Contact'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
      <Course/>
      <Feedback/>
      <Qn/>
+     <Contact/>
     </>
   )
 }
