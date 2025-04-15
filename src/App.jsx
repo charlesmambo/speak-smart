@@ -10,6 +10,7 @@ import Feedback from './components/feedback/Feedback'
 import Qn from './components/qn/Qn'
 import Contact from './components/contact/Contact'
 import Divider from './components/divider/Divider'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
      <Qn/>
      <Contact/>
      <Divider/>
+     <Footer/>
     </>
   )
 }
