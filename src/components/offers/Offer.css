@@ -69,12 +69,18 @@ width: 100%;
 
 @media only screen and (max-width: 600px){
     .offers{
-        padding: 2rem  1.5rem;
+        padding: 2rem  1.2rem;
     }
     
     .offers-content-wrapper{
         justify-content: center;
         gap: 1.2rem;
         flex-direction: column;
-    }   
+    } 
+    .offere-heading img{
+        width: 220px;
+       }  
+       .offere-heading h2{
+        font-size: 1.7rem;
+    }
 }

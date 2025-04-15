@@ -158,7 +158,7 @@
   width: 100%;
 }
 .improve{
-  padding: 2rem  1.5rem;
+  padding: 2rem  1.2rem;
 }
 .improve-heading{
   display: flex;
@@ -166,7 +166,9 @@
   align-items: center;
   margin-bottom: 1.4rem;
 }
-
+.improve-heading h2{
+  font-size: 1.7rem;
+}
 }
 
 @media screen and (min-width: 1324px) {

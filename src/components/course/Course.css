@@ -64,7 +64,7 @@ width: 350px;
 }
 @media only screen and (max-width: 600px){
     .course{
-        padding: 2rem  1.5rem;
+        padding: 2rem  1.2rem;
     }
 
     .course-card-content{
@@ -86,4 +86,11 @@ width: 350px;
       .course-content{
         margin-top: 2rem;
     }
+    .course-heading h2{
+    text-align: center;
+    font-size: 1.7rem;
+    }
+    .course-heading img{
+        width: 320px;
+        }
 }
