@@ -76,5 +76,23 @@ font-size: 0.9rem;
     align-items: center;
     cursor: pointer;
   }
-  
+  @media only screen and (max-width: 600px){
+    .qn{
+        padding: 2rem  1.2rem;
+}
+.qn-heading{
+text-align: center;
+ }
+ .qn-heading h2{
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+.qn-toggle{
+    width: 90%;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 0.6rem;
+ }
+}
   
