@@ -66,5 +66,30 @@ footer{
     color: #3771C8;
 }
 .insta{
-    color: #fe4027b5;
+    color: #eb3219b5;
+}
+@media only screen and (max-width: 600px){
+    footer{
+        padding: 2rem  1.2rem;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 2px solid rgba(146, 146, 146, 0.422);
+    padding-bottom: 0.9rem;
+    flex-direction: column;
+}
+.footer-logo p{
+    display: block;
+    width: 100%;
+}
+.footer-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
 }
