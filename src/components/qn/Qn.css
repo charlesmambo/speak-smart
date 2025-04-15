@@ -1,0 +1,80 @@
+.qn{
+        padding: 2rem  4.5rem;
+        color: #304560;
+}
+
+.qn-heading{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.qn-heading h2{
+    font-family: "Aclonica", sans-serif; 
+    font-weight: 500;
+    color: #304560;
+    font-size: 1.9rem;
+    margin-bottom: 0.3rem;
+}
+.qn-toggle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.qn-toggle{
+border-top: 2px solid #8e8e8e65;
+width: 66vw;
+gap: 0.3rem;
+display: flex;
+flex-direction: column;
+padding: 0.5rem 0.6rem;
+}
+.qn-toggle h4{
+font-size: 1.1rem;
+}
+.qn-toggle p{
+color: #8e8e8e;
+font-size: 0.9rem;
+}
+.toggle-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.qn-icon{
+    font-size: 1.3rem;
+    color: #8e8e8e;
+}
+.qn-toggle p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 0.4s ease;
+    opacity: 0;
+    margin: 0;
+  }
+  
+  .qn-toggle.open p {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 0.5rem;
+  }
+  
+  .qn-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .qn-toggle.open .qn-icon {
+    transform: rotate(180deg);
+  }
+  
+  .toggle-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  

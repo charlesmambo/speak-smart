@@ -59,6 +59,18 @@ color: #707a88;
   align-items: center;
 }
 
+.feedback-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.feedback-btn{
+    display: flex;
+    align-items: center;  
+    gap: 0.3rem;
+}
+
 @media only screen and (max-width: 600px){
     .feedback{
         padding: 2rem  1.2rem;

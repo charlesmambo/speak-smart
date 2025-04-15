@@ -1,6 +1,8 @@
 import React from 'react';
 import '../feedback/Feedback.css';
 import { IoIosStar } from "react-icons/io";
+import PrimaryBtn from '../buttons/PrimaryBtn';
+import ArrowBtn from '../arrowBtn/ArrowBtn';
 
 
 const Feedback = () => {
@@ -48,6 +50,12 @@ const Feedback = () => {
                 </div>
                 <p className='card-text'>The tutor was always punctual and well-prepared. They tailored the lessons to my pace and helped me prepare for my final exams. I appreciated how organized and friendly they were. I’m now looking to book lessons for next term too! </p>
             </div>
+        </div>
+        <div className="feedback-btn-container">
+            <div className="feedback-btn">
+            <PrimaryBtn text="book demo" className="intro-btn" />
+            <ArrowBtn/>
+           </div>
         </div>
     </div>
   )

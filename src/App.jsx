@@ -7,6 +7,7 @@ import About from './components/about/About'
 import Improve from './components/improve/Improve'
 import Course from './components/course/Course'
 import Feedback from './components/feedback/Feedback'
+import Qn from './components/qn/Qn'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
      <Improve/>
      <Course/>
      <Feedback/>
+     <Qn/>
     </>
   )
 }
