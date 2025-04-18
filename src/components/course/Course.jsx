@@ -1,7 +1,7 @@
 import React from 'react';
 import '../course/Course.css';
 import IMG from '../../assets/img4.png';
-
+import IMG1 from '../../assets/abt.jpg';
 
 const Course = () => {
   return (
@@ -10,7 +10,8 @@ const Course = () => {
           <h2>Our Course Workflow</h2>
           <img src={IMG} alt="" />
        </div>
-
+      
+      <div className="course-content-wrapper">
        <div className="course-content">
          <div className="course-card">
             <div className="course-number">1</div>
@@ -40,6 +41,8 @@ const Course = () => {
                 <p>Have the tutee summarize the process of addressing ths  task type.</p>
             </div>
          </div>
+       </div>
+       <img src={IMG1} alt="" />
        </div>
     </div>
   )

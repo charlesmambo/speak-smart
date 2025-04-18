@@ -9,11 +9,11 @@ align-items: center;
 flex-direction: column;
 }
 .qn-heading h2{
-    font-family: "Aclonica", sans-serif; 
-    font-weight: 500;
-    color: #304560;
-    font-size: 1.9rem;
-    margin-bottom: 0.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #304560;
+  font-size: 1.9rem;
+    margin-bottom: 0.6rem;
 }
 .qn-toggle-container{
     display: flex;

@@ -12,6 +12,11 @@ const Footer = () => {
         <div className="footer-logo">
               <img src={LOGO} alt="Speak Smart Tutoring logo" />
             <p>A dedicated and passionate tutoring service offering personalized learning experiences</p>
+            <div className="socials">
+            <FcGoogle className='footer-icon'/>
+            <IoLogoFacebook className='footer-icon fb'/>
+            <FaSquareInstagram className='footer-icon insta' />
+            </div>
         </div>
 
         <div className="footer-links-container">
@@ -42,11 +47,6 @@ const Footer = () => {
 
         <div className="copyrights">
             <p>Copyright @speaksmarttutoring 2025. All rights reserved</p>
-            <div className="socials">
-            <FcGoogle className='footer-icon'/>
-            <IoLogoFacebook className='footer-icon fb'/>
-            <FaSquareInstagram className='footer-icon insta' />
-            </div>
         </div>
     </footer>
   )

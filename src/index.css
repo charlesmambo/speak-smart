@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
  border: none;
  box-sizing: border-box;
@@ -7,7 +7,6 @@
  list-style: none;
  text-decoration: none;
  font-family: "DM Sans", sans-serif;
- /* font-family: "Aclonica", sans-serif; */
 }
 
 body{

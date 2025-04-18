@@ -4,11 +4,14 @@
     padding-bottom: 5rem;
 }
 
+.improve-heading {
+  margin-bottom: 1rem;
+}
 .improve-heading h2{
-    font-family: "Aclonica", sans-serif; 
-    font-weight: 500;
+    font-weight: 700;
     color: #304560;
     font-size: 1.9rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .improve-heading img{
@@ -16,74 +19,42 @@
 }
 .improve-cards-container{
     display: flex;
-    gap: 1.8rem;
+    gap: 1.2rem;
     align-items: center;
     justify-content: center;
 }
 .ac-bottom-box{
-    margin-top: 1.5rem;
-    gap: 1.6rem;
+    margin-top: 1.2rem;
 }
 
-@keyframes slowBounce {
-    0%, 100% {
-      transform: translateY(0) rotate(var(--rotate));
-    }
-    50% {
-      transform: translateY(-2px) rotate(var(--rotate));
-    }
-  }
-  
-  .academics,
-  .extended,
-  .arts,
-  .hobbies {
-    animation: slowBounce 3s ease-in-out infinite;
-    animation-delay: var(--delay);
-  }
-  
-  /* Individual rotations and delays */
-  .academics {
-    --rotate: -18deg;
-    --delay: 0s;
-  }
-  
-  .extended {
-    --rotate: 18deg;
-    --delay: 0.5s;
-  }
-  
-  .arts {
-    --rotate: 18deg;
-    --delay: 1s;
-  }
-  
-  .hobbies {
-    --rotate: -18deg;
-    --delay: 1.5s;
-    margin-top: 2rem;
-  }
-  
 .card{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 0.4rem;
     background-color: #FFFFFF;
-    width: 27vw;
-    padding: 1.5rem;
+    width: 30vw;
+    min-height: 200px;
+    padding: 1.2rem;
     color: #304560;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.06);
 }
 .card h4{
  margin-top: 0.4rem;
 }
 .card p{
  margin-top: 0.4rem;
+ font-size: 0.9rem;
 }
 
 .card-img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 0.5rem;
     border-radius: 0.3rem;
     align-self: self-end;
@@ -104,45 +75,10 @@
    background-color: #304560; 
 }
 
+
+
+
 @media only screen and (max-width: 600px){
-  @keyframes slowBounce {
-    0%, 100% {
-      transform: translateY(0) rotate(var(--rotate));
-    }
-    50% {
-      transform: translateY(-0px) rotate(var(--rotate));
-    }
-  }
-  
-  .academics,
-  .extended,
-  .arts,
-  .hobbies {
-    animation: slowBounce 3s ease-in-out infinite;
-    animation-delay: var(--delay);
-  }
-  
-  /* Individual rotations and delays */
-  .academics {
-    --rotate: -0deg;
-    --delay: 0s;
-  }
-  
-  .extended {
-    --rotate: 0deg;
-    --delay: 0.5s;
-  }
-  
-  .arts {
-    --rotate: 0deg;
-    --delay: 1s;
-  }
-  
-  .hobbies {
-    --rotate: -0deg;
-    --delay: 1.5s;
-    margin-top: 0rem;
-  }
   .improve-cards-container{
     display: flex;
     gap: 1.1rem;
@@ -173,7 +109,7 @@
 
 @media screen and (min-width: 1324px) {
     .ac-bottom-box{
-        margin-top: 4.8rem;
+        margin-top: 2.6rem;
         gap: 1.6rem;
     }
     .card{

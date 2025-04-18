@@ -15,7 +15,7 @@ const Feedback = () => {
 
         <div className="feedback-cards-container">
             <div className="feedback-card">
-                <h4>Name</h4>
+                <h4>Lerato</h4>
                 <div className="feedback-rate">
                     <p>Student/Parent</p>
                     <div className="stars">
@@ -27,7 +27,7 @@ const Feedback = () => {
                 <p className='card-text'>I used to struggle with Mathematics, but after just a few sessions with my tutor, I started understanding concepts I had never been able to grasp before. They were patient, explained things clearly, and made learning enjoyable. Thanks to them, I went from failing to passing with confidence. </p>
             </div>
             <div className="feedback-card">
-                <h4>Name</h4>
+                <h4>Thando</h4>
                 <div className="feedback-rate">
                     <p>Student/Parent</p>
                     <div className="stars">
@@ -39,7 +39,7 @@ const Feedback = () => {
                 <p className='card-text'>This one on one tutoring made my child to feel proud about her progress and she is confident with her math skills.</p>
             </div>
             <div className="feedback-card">
-                <h4>Name</h4>
+                <h4>Lisa</h4>
                 <div className="feedback-rate">
                     <p>Student/Parent</p>
                     <div className="stars">
@@ -51,12 +51,12 @@ const Feedback = () => {
                 <p className='card-text'>The tutor was always punctual and well-prepared. They tailored the lessons to my pace and helped me prepare for my final exams. I appreciated how organized and friendly they were. I’m now looking to book lessons for next term too! </p>
             </div>
         </div>
-        <div className="feedback-btn-container">
+        {/* <div className="feedback-btn-container">
             <div className="feedback-btn">
             <PrimaryBtn text="book demo" className="intro-btn" />
             <ArrowBtn/>
            </div>
-        </div>
+        </div> */}
     </div>
   )
 }
