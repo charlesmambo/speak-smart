@@ -15,6 +15,7 @@
 }
 .course-heading img{
 width: 350px;
+margin-top: -0.2rem;
 }
 
 .course-content{
@@ -120,5 +121,9 @@ width: 350px;
         .course-content-wrapper img{
             display: block;
             min-width: 100%;
+         }
+         .course-heading img{
+            width: 304px;
+            margin-top: -0.2rem;
          }
 }

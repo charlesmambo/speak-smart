@@ -16,6 +16,7 @@
 
 .improve-heading img{
     width:190px;
+    margin-top: -0.1rem;
 }
 .improve-cards-container{
     display: flex;
@@ -104,6 +105,10 @@
 }
 .improve-heading h2{
   font-size: 1.7rem;
+}
+.improve-heading img{
+  width:176px;
+  margin-top: -0.1rem;
 }
 }
 

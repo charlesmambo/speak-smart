@@ -16,7 +16,8 @@
     text-transform: capitalize;
 }
 .offere-heading img{
- width: 300px;
+ width: 230px;
+ margin-top: -0.2rem;
 }
 
 .offers-content-wrapper{

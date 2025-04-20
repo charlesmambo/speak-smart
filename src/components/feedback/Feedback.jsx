@@ -10,7 +10,7 @@ const Feedback = () => {
     <div className='feedback'>
         <div className="feedback-heading">
             <h2>Our Student Feedback</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis nisl ut.</p>
+            <p>We believe in the power of listening. Here's what our students have to say about their experience with us.</p>
         </div>
 
         <div className="feedback-cards-container">
