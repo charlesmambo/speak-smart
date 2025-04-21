@@ -28,7 +28,8 @@
 
 .abt-content-wrapper img{
     display: block;
-    min-width: 390px;
+    min-width: 300px;
+    height: 340px;
 }
 
 .abt-content{
@@ -197,6 +198,7 @@
   display: block;
   min-width: 190px;
   width: 100%;
+  height: auto;
   box-sizing: border-box;
 } 
 }

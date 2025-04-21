@@ -1,6 +1,7 @@
 import React from 'react';
 import '../course/Course.css';
 import IMG from '../../assets/img4.png';
+// import IMG1 from '../../assets/imgg.png';
 import IMG1 from '../../assets/abt.jpg';
 
 const Course = () => {
