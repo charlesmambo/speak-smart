@@ -21,12 +21,12 @@ const Navbar = () => {
 
         <div className="nav-item-container">
             <ul className="nav-items">
-            <li><a href="">home</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">services</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
             </ul>
             <div className="ctc-btn-container">
-            <PrimaryBtn text="Contact Us" className="nav-btn" />
+            <a href="#contact"><PrimaryBtn text="Contact Us" className="nav-btn" /></a>
             </div>
         </div>
 
@@ -41,12 +41,14 @@ const Navbar = () => {
             {isMobileOpen && (
             <div className="mobile-navbar">
             <ul className="nav-items mobile-items">
-                <li><a href="">home</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">services</a></li>
+            <li><a href="#home" onClick={() => setIsMobileOpen(false)}>home</a></li>
+            <li><a href="#about" onClick={() => setIsMobileOpen(false)}>about</a></li>
+            <li><a href="#services" onClick={() => setIsMobileOpen(false)}>services</a></li>
             </ul>
             <div className="ctc-btn-container">
+            <a href="#contact" onClick={() => setIsMobileOpen(false)}>
                 <PrimaryBtn text="Contact Us" className="nav-btn mobile-btn" />
+            </a>
             </div>
             </div>
             )}

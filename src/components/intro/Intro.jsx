@@ -6,7 +6,7 @@ import Hero from '../hero/Hero'
 
 const Intro = () => {
   return (
-    <div className='intro-wrapper'>
+    <div className='intro-wrapper' id='home'>
     <div className='intro'>
       <div className="intro-heading">
         <h1>Personalized Tutoring That Goes Beyond Grades</h1>

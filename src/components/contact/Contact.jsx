@@ -4,7 +4,7 @@ import IMG from '../../assets/line.png';
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <div className="contact-heading">
         <h2>Get in touch with us</h2>
         <img src={IMG} alt="" />

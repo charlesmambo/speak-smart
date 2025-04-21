@@ -8,7 +8,7 @@ import IMG4 from '../../assets/img.png';
 
 const Offer = () => {
   return (
-    <div className='offers'>
+    <div className='offers' id='services'>
         <div className="offere-heading">
             <h2>What we offer</h2>
             <img src={IMG} alt="" />
