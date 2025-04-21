@@ -77,6 +77,22 @@
 }
 
 
+.academics{
+  border-left: 23px solid #EE552C;
+}
+.extended{
+  border-left: 23px solid #106120;
+}
+.arts{
+  border-left: 23px solid #FFCD29; 
+}
+.hobbies{
+  border-left: 23px solid #304560;  
+}
+
+
+
+
 
 
 @media only screen and (max-width: 600px){

@@ -16,7 +16,8 @@ const Navbar = () => {
   return (
     <nav>
         <div className="logo-container">
-            <img src={LOGO} alt="Speak Smart Tutoring logo" />
+        <a href="#home">
+            <img src={LOGO} alt="Speak Smart Tutoring logo" /></a>
         </div>
 
         <div className="nav-item-container">
