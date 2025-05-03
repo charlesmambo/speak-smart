@@ -1,0 +1,101 @@
+.demo-request-icon {
+    color: #d71111;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .demo-request {
+    margin-top: 1rem;
+  }
+  
+  .demo-request-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .demo-request-heading {
+    text-align: center;
+  }
+  .grades {
+    text-align: center;
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grades-container {
+    margin-top: 1rem;
+    display: flex;
+    width: 24vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
+  }
+  .grades-container p {
+    text-transform: capitalize;
+    border: 2px solid #304560;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    min-width: 88px;
+    cursor: pointer;
+  }
+  .demo-request-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .demo-request-btn {
+    color: #304560;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 1.02rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    text-transform: capitalize;
+    margin-top: 1.3rem;
+    min-width: 80px;
+    background-color: transparent;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .grades-container {
+      margin-top: 1rem;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.7rem;
+    }
+    .demo-request-btn2 button {
+      width: 4vw !important;
+    }
+    .demo-request-btn {
+      color: #304560;
+      padding: 0.7rem;
+      text-align: center;
+      font-size: 1.02rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
+      text-transform: capitalize;
+      margin-top: 1.3rem;
+      min-width: 60px;
+      background-color: transparent;
+    }
+    .grades-container p {
+      text-transform: capitalize;
+      border: 2px solid #304560;
+      width: fit-content;
+      border-radius: 2rem;
+      padding: 0.4rem 1rem;
+      min-width: 93px;
+      cursor: pointer;
+    }
+  }
+  
