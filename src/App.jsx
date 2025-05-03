@@ -11,6 +11,7 @@ import Qn from './components/qn/Qn'
 import Contact from './components/contact/Contact'
 import Divider from './components/divider/Divider'
 import Footer from './components/footer/Footer'
+import Demo from './components/demo/Demo'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
      <Improve/>
      <Course/>
      <Feedback/>
+     <Demo/>
      <Qn/>
      <Contact/>
      <Divider/>
