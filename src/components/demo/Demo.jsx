@@ -4,21 +4,14 @@ import IMG from "../../assets/behi.svg";
 import IMG2 from "../../assets/behi2.svg";
 import IMG3 from "../../assets/behi3.svg";
 import DemoRequest from "../demoRequest/DemoRequest";
+import Rd from "../rd/Rd";
 
 const Demo = () => {
-    const [showRequest, setShowRequest] = useState(false);
-
-    const handleNextClick = () => {
-      setShowRequest(true);
-    };
-  
-    const handleBackClick = () => {
-      setShowRequest(false);
-    };
+  const [step, setStep] = useState("intro"); // intro | request | rd
 
   return (
     <div className="demo">
-      {!showRequest && ( 
+      {step === "intro" && (
         <div className="first-demo-step">
           <div className="title-container">
             <h2>How can we help your Child?</h2>
@@ -42,15 +35,26 @@ const Demo = () => {
               </div>
             </div>
             <div className="demo-btn">
-              <button type="button" onClick={handleNextClick}>
-                next
+              <button type="button" onClick={() => setStep("request")}>
+                Next
               </button>
             </div>
           </div>
         </div>
       )}
 
-     {showRequest && <DemoRequest onBack={handleBackClick} />}
+      {step === "request" && (
+        <DemoRequest 
+          onBack={() => setStep("intro")} 
+          onNext={() => setStep("rd")} 
+        />
+      )}
+
+      {step === "rd" && (
+        <Rd 
+          onBack={() => setStep("request")} 
+        />
+      )}
     </div>
   );
 };

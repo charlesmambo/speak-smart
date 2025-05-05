@@ -26,7 +26,7 @@
   .grades-container {
     margin-top: 1rem;
     display: flex;
-    width: 24vw;
+    width: 28vw;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +60,26 @@
     min-width: 80px;
     background-color: transparent;
   }
+
+  
+  
+  .grade-item {
+    padding: 10px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .grade-item:hover {
+    border-color: #999;
+  }
+  
+  .grade-item.selected {
+    border-color: green;
+    background-color: #e6ffe6;
+  }
+  
   
   @media only screen and (max-width: 600px) {
     .grades-container {
@@ -95,6 +115,11 @@
       border-radius: 2rem;
       padding: 0.4rem 1rem;
       min-width: 93px;
+      cursor: pointer;
+    }
+    .demo-request-icon {
+      color: #d71111;
+      font-size: 2.4rem;
       cursor: pointer;
     }
   }
