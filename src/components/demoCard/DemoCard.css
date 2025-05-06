@@ -1,0 +1,18 @@
+
+  /* .demo-card {
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-align: center;
+  } */
+  
+  .border-red   { border-color: #e53e3e; }
+  .border-blue  { border-color: #3182ce; }
+  .border-green { border-color: #2f855a; }
+  
+  .red   { color: #e53e3e; }
+  .blue  { color: #3182ce; }
+  .green { color: #2f855a; }
+  
+  

@@ -1,0 +1,19 @@
+.persona{
+   text-align: center; 
+}
+.persona h2{
+    font-weight: 700;
+    color: #304560;
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+}
+.demo-card.selected {
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+    background-color: #10612038;
+  }
+  @media only screen and (max-width: 600px){
+    .demo-card {
+        width: 85vw !important;
+    }
+  }

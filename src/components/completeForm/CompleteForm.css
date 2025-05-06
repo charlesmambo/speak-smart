@@ -1,0 +1,64 @@
+
+.complete button {
+    background-color: #304560;
+    color: #f1f1f1;
+    padding: 0.7rem 1.2rem;
+    text-align: center;
+    font-size: 1.02rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    text-transform: capitalize;
+    margin-top: 1.8rem;
+    min-width: 90px;
+}
+
+.complete button:hover {
+    background-color: #344b64;
+    transform: scale(1.05);
+}
+.complete-range-bar{
+    width: 100%;
+}
+.form-control-wrapper{
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.complete-form-control input {
+    padding: 0.6rem 1rem;
+    text-align: center;
+    border: 1.5px solid #9c9c9c !important;
+    background-color: transparent;
+    border-radius: 1.2rem;
+    width: 18vw;
+    outline: none;
+}
+.complete-form-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+@media only screen and (max-width: 600px){
+    .complete-form-control{
+        display: flex;
+        align-items: self-start;
+        justify-content: left;
+        flex-direction: column;
+        width: 88%;
+        gap: 0.7rem;
+    }
+    .complete-form-control input {
+        padding: 0.6rem 1rem;
+        text-align: left;
+        border: 1.5px solid #9c9c9c !important;
+        background-color: transparent;
+        border-radius: 1.2rem;
+        width: 100%;
+        outline: none;
+    }
+  }

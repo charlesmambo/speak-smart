@@ -2,7 +2,7 @@ import React from 'react';
 import '../rd/Rd.css';
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Rd = ({ onBack }) => {
+const Rd = ({ onBack, onNext  }) => {
   const subjects = [
     "English",
     "Maths",
@@ -55,8 +55,8 @@ const Rd = ({ onBack }) => {
         <div className="rd-btns">
           <button className="rd-btn" type="button" onClick={onBack}>back</button>
           <div className="demo-btn rd-btn2">
-            <button type="submit">next</button>
-          </div>
+  <button type="submit" onClick={onNext}>next</button>
+</div>
         </div>
       </div>
     </div>
