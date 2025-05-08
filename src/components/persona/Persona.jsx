@@ -32,7 +32,7 @@ const Persona = ({ onBack, onNext }) => {
             {options.map(({ label, img, color }) => (
               <div
                 key={label}
-                className={`demo-card border-${color} ${selected === label ? "selected" : ""}`}
+                className={`demo-card persona-card border-${color} ${selected === label ? "selected" : ""}`}
                 onClick={() => setSelected(label)}
               >
                 <img src={img} alt={label} />

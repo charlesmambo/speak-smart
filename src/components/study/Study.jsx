@@ -31,21 +31,21 @@ const Study = ({ onBack, onNext }) => {
       <div className="demo-cards">
         <div className="demo-card-wrapper">
           <div
-            className={`demo-card border-red ${selectedCard === "easily-distracted" ? "selected" : ""}`}
+            className={`demo-card persona-card border-red ${selectedCard === "easily-distracted" ? "selected" : ""}`}
             onClick={() => handleCardClick("easily-distracted")}
           >
             <img src={IMG} alt="" />
             <p className="red">Easily Distracted</p>
           </div>
           <div
-            className={`demo-card border-green ${selectedCard === "most-attentive" ? "selected" : ""}`}
+            className={`demo-card persona-card border-green ${selectedCard === "most-attentive" ? "selected" : ""}`}
             onClick={() => handleCardClick("most-attentive")}
           >
             <img src={IMG2} alt="" />
             <p className="green">Most Attentive</p>
           </div>
           <div
-            className={`demo-card border-blue ${selectedCard === "highly-focused" ? "selected" : ""}`}
+            className={`demo-card persona-card border-blue ${selectedCard === "highly-focused" ? "selected" : ""}`}
             onClick={() => handleCardClick("highly-focused")}
           >
             <img src={IMG3} alt="" />
