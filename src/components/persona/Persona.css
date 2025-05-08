@@ -1,6 +1,12 @@
 .persona{
    text-align: center; 
 }
+.persona-container{
+  width: 62vw;
+}
+.pers-bar{
+  width: 60% !important;
+}
 .persona h2{
     font-weight: 700;
     color: #304560;

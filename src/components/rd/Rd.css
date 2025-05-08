@@ -5,12 +5,13 @@
 }
 .rd-wrapper{
 background-color: #d9d9d957;
-padding: 2rem 0;
-padding-bottom: 2.8rem;
+padding: 1.5rem 0;
+padding-bottom: 2.2rem;
 border-radius: 1.2rem;
 width: 65%;
 text-align: center;
 overflow: hidden;
+position: relative;
 }
 .rd-title-container{
     display: flex;
@@ -41,6 +42,9 @@ overflow: hidden;
     width: 50%;
     background-color: #EE552C;
 }
+.sub-bar{
+  width: 50% !important;
+}
 .rd-btns{
     margin-top: 1rem;
     display: flex;
@@ -49,7 +53,6 @@ overflow: hidden;
     gap: 1.8rem;
 }
 .rd-btn{
-    border-bottom: 2.5px solid #EE552C;
     padding: 0;
     font-size: 1rem;
     text-transform: capitalize;
@@ -57,13 +60,12 @@ overflow: hidden;
     margin-bottom: -1.1rem;
     cursor: pointer;
 }
-/* .rd-btn2 button{
-    border-radius: 1.3rem;
-} */
+
 .checkbox-wrapper{
     display: flex;
     margin-top: 1.3rem;
     gap: 2.5rem;
+    justify-content: center;
 }
   .checkbox-container {
     display: flex;
@@ -128,12 +130,13 @@ overflow: hidden;
   @media only screen and (max-width: 600px){
     .rd-wrapper{
         background-color: #d9d9d957;
-        padding: 2rem 0;
+        padding: 1rem 0;
         padding-bottom: 2.8rem;
         border-radius: 1.2rem;
         width: 100%;
         text-align: center;
         overflow: hidden;
+
         } 
         .rd-title-container{
             display: flex;
@@ -167,5 +170,16 @@ overflow: hidden;
                 display: flex;
                 margin-top: 1.3rem;
                 gap: 1rem;
+                width: 100%;
+            }
+            .close-icon{
+              font-size: 1.5rem;
+            }
+            .rd-content{
+              margin-top: 1rem;
+              padding: 0.3rem 1rem;
+          }
+          .rd-wrapper{
+            width: 100% !important;
             }
   }

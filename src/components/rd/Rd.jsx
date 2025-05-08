@@ -32,7 +32,7 @@ const Rd = ({ onBack, onNext  }) => {
         </div>
 
         <div className="range">
-          <div className="range-bar"></div>
+          <div className="range-bar sub-bar"></div>
         </div>
 
         <div className="rd-content">
@@ -53,10 +53,12 @@ const Rd = ({ onBack, onNext  }) => {
         </div>
 
         <div className="rd-btns">
-          <button className="rd-btn" type="button" onClick={onBack}>back</button>
+          <div className="div-btn" onClick={onBack}>
+            Back
+          </div>
           <div className="demo-btn rd-btn2">
-  <button type="submit" onClick={onNext}>next</button>
-</div>
+            <button type="submit" onClick={onNext}>next</button>
+          </div>
         </div>
       </div>
     </div>

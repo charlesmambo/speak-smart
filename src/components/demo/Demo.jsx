@@ -18,8 +18,8 @@ const Demo = () => {
   };
 
   const resetDemo = () => {
-    setSelectedCard(null);  // Reset selection
-    setStep("intro");       // Go to the first step
+    setSelectedCard(null);  
+    setStep("intro");       
   };
   
   return (

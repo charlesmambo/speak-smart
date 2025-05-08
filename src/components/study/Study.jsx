@@ -3,17 +3,31 @@ import '../study/Study.css';
 import IMG from "../../assets/behi7.svg";
 import IMG2 from "../../assets/behi8.svg";
 import IMG3 from "../../assets/behi9.svg";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Study = ({ onBack, onNext }) => {
-  const [selectedCard, setSelectedCard] = useState(null); // State to track selected card
-
+  const [selectedCard, setSelectedCard] = useState(null); 
   const handleCardClick = (cardId) => {
-    setSelectedCard(cardId); // Set the selected card
+    setSelectedCard(cardId); 
   };
 
   return (
+    <div className="dmr">
+    <div className='rd-wrapper persona-container'>
     <div className='study'>
-      <h2>Study Focus</h2>
+     
+              <div className="rd-title-container">
+                <div className="rd-title">
+                <h2>Study Focus</h2>
+                </div>
+                <div className="demo-request-icon">
+                <AiOutlineCloseCircle className='close-icon' onClick={onBack} />
+                </div>
+              </div>
+
+              <div className="range">
+          <div className="range-bar stud-bar"></div>
+        </div>
       <div className="demo-cards">
         <div className="demo-card-wrapper">
           <div
@@ -39,9 +53,9 @@ const Study = ({ onBack, onNext }) => {
           </div>
         </div>
         <div className="demo-request-btns">
-          <button type="button" className="demo-request-btn" onClick={onBack}>
-            Back
-          </button>
+        <div className="div-btn" onClick={onBack}>
+        Back
+        </div>
           <div className="demo-btn demo-request-btn2">
             <button type="button" onClick={onNext}>
               Next
@@ -49,6 +63,8 @@ const Study = ({ onBack, onNext }) => {
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

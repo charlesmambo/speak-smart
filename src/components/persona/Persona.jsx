@@ -3,7 +3,7 @@ import '../persona/Persona.css';
 import IMG from "../../assets/behi4.svg";
 import IMG2 from "../../assets/behi5.svg";
 import IMG3 from "../../assets/behi6.svg";
-
+import { AiOutlineCloseCircle } from "react-icons/ai";
 const Persona = ({ onBack, onNext }) => {
     const [selected, setSelected] = useState("");
   
@@ -14,8 +14,19 @@ const Persona = ({ onBack, onNext }) => {
     ];
   
     return (
+      <div className="dmr">
+    <div className='rd-wrapper persona-container'>
       <div className='persona'>
-        <h2>Personality</h2>
+       
+              <div className="demo-request-title persona-rq-title">
+                <div className="demo-request-heading">
+                <h2>Personality</h2>
+                </div>
+                  <AiOutlineCloseCircle className='close-icon' onClick={onBack} />
+              </div>
+        <div className="range">
+          <div className="range-bar pers-bar"></div>
+        </div>
         <div className="demo-cards">
           <div className="demo-card-wrapper">
             {options.map(({ label, img, color }) => (
@@ -31,9 +42,9 @@ const Persona = ({ onBack, onNext }) => {
           </div>
   
           <div className="demo-request-btns">
-            <button type="button" className="demo-request-btn" onClick={onBack}>
-              Back
-            </button>
+          <div className="div-btn" onClick={onBack}>
+            Back
+            </div>
             <div className="demo-btn demo-request-btn2">
               <button
                 type="button"
@@ -45,6 +56,8 @@ const Persona = ({ onBack, onNext }) => {
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     );
   };

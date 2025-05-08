@@ -46,22 +46,13 @@
     align-items: center;
     gap: 1.5rem;
     justify-content: center;
-  }
-  .demo-request-btn {
-    color: #304560;
-    padding: 0.7rem;
-    text-align: center;
-    font-size: 1.02rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.6s ease-in-out;
-    text-transform: capitalize;
-    margin-top: 1.3rem;
-    min-width: 80px;
-    background-color: transparent;
+    margin-top: 0.4rem;
   }
 
   
+  .demo-g{
+    width: 30% !important;
+  }
   
   .grade-item {
     padding: 10px 16px;
@@ -79,13 +70,38 @@
     border-color: green;
     background-color: #e6ffe6;
   }
+  .demo-request-btn{
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .div-btn{
+    margin-top: 1rem;
+    cursor: pointer;
+    border-bottom: 3px solid #EE552C;
+    transition: all 0.6s ease-in-out;
+  }
+  .div-btn:hover{
+    border-bottom: 4px solid #EE552C;
+  }
   
-  
+  .dmr{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .close-icon{
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
   @media only screen and (max-width: 600px) {
     .grades-container {
       margin-top: 1rem;
       display: flex;
-      width: 100%;
+      width: 91%;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
@@ -120,6 +136,13 @@
     .demo-request-icon {
       color: #d71111;
       font-size: 2.4rem;
+      cursor: pointer;
+    }
+    .close-icon{
+      position: absolute;
+      top: 1.2rem;
+      right: 1rem;
+      font-size: 1.8rem !important;
       cursor: pointer;
     }
   }
