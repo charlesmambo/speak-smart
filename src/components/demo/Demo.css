@@ -67,7 +67,7 @@
 }
 
 .border-red{
-   border-color: #D71111; 
+   border-color: #D71111 !important; 
 }
 .border-green{
    border-color: #106120 !important; 
@@ -147,3 +147,24 @@
         box-sizing: border-box;
     }
 }
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+   .demo{
+    padding:1rem 3rem; 
+    color: #304560;
+} 
+.demo-card{
+    border: 3px solid;
+    width: fit-content;
+    height: 20vh;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+    gap: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 1.4rem;
+    overflow: hidden;
+}
+  }

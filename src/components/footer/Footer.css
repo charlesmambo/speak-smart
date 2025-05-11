@@ -107,3 +107,20 @@ footer{
     margin-top: 0.4rem;
 }
 }
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+    footer{
+    padding: 2rem 3rem;
+    color: #304560;
+}
+.footer-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 29vw;
+}
+.footer-logo p{
+    display: block;
+    width: 33vw;
+}
+   }

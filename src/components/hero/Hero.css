@@ -88,3 +88,16 @@ justify-content: space-between;
     display: none;
 }
 }
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .first-img img{
+   display: none;
+}
+.grey-box{
+  display: none;
+}
+.second-img img{
+       width:400px;
+}
+ }

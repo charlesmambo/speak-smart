@@ -146,4 +146,14 @@
       cursor: pointer;
     }
   }
-  
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+     .rd-wrapper{
+      width: 100% !important;
+     } 
+       .grades-container {
+      margin-top: 1rem;
+      display: flex;
+      width: 51%;
+    }
+    }

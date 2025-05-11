@@ -146,3 +146,22 @@
 }
   }
   
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .improve{
+    padding: 3rem;
+
+}
+    .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF;
+    width: 70vw !important;
+    min-height: 230px;
+    padding: 1.2rem;
+    color: #304560;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+   }

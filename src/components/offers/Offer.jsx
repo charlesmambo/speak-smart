@@ -39,7 +39,7 @@ const Offer = () => {
                 <h3>Fun and Interactive Teaching Methods</h3>
                 <p>We make learning exciting through gamification techniques like quizzes, challenges, and interactive activities. These methods keep students engaged, improve knowledge retention, and enhance problem-solving skills while making education enjoyable.</p>
             </div>
-            <div className="offer-content">
+            <div className="offer-content last-offer">
                <div className="offer-img mt">
                  <img src={IMG4} alt="" />
                 </div>

@@ -96,3 +96,18 @@ color: #707a88;
         width: 100%;
     }
 }
+
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .feedback-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.4rem;
+    background-color: #FFFFFF;
+    width: 35vw;
+    padding: 1.5rem;
+    color: #304560;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-height: 290px;
+}
+   }

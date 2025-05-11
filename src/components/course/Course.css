@@ -135,3 +135,16 @@ margin-top: -0.2rem;
             margin-top: -0.2rem;
          }
 }
+
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .course{
+    padding:3rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+.course-content-wrapper img{
+   display: block;
+   width: 340px;
+   height: 340px;
+}
+   }

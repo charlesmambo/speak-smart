@@ -203,3 +203,24 @@
   box-sizing: border-box;
 } 
 }
+ @media only screen and (min-width: 768px) and (max-width: 1024px){
+  .abt{
+    padding: 3rem; 
+    padding-bottom: 3rem;
+}
+.abt-content-wrapper{
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+    flex-direction: column;
+}
+.abt-content{
+    width: 100%;
+}
+.abt-content-wrapper img{
+    display: block;
+    min-width: 300px;
+    height: 370px;
+}
+ }
