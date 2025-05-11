@@ -1,10 +1,11 @@
 import React from "react";
 import "../completeForm/CompleteForm.css";
 
-const CompleteForm = ({ onBack }) => {
+const CompleteForm = ({ onBack, onDone }) => {
   const handleDone = (e) => {
-    e.preventDefault(); // Prevent form submission
-    onBack(); // Go back to the first page (intro)
+    e.preventDefault(); 
+    onBack(); 
+       if (onDone) onDone();
   };
 
   return (

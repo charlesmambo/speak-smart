@@ -8,10 +8,23 @@ import Rd from "../rd/Rd";
 import Persona from "../persona/Persona";
 import Study from "../study/Study";
 import CompleteForm from "../completeForm/CompleteForm";
+import Pop from "../popup/Pop";
 
 const Demo = () => {
   const [step, setStep] = useState("intro");
-  const [selectedCard, setSelectedCard] = useState(null); // Track selected card
+  const [selectedCard, setSelectedCard] = useState(null); 
+  const [progress, setProgress] = useState(0); // 0 to 100
+  const [showPop, setShowPop] = useState(false);
+
+const handleDone = () => {
+  setShowPop(true);
+  setTimeout(() => {
+    setShowPop(false);
+  }, 3000); // 30 seconds
+  resetDemo(); // Reset to intro step
+};
+
+
 
   const handleCardClick = (cardId) => {
     setSelectedCard(cardId); // Set the clicked card as selected
@@ -21,6 +34,11 @@ const Demo = () => {
     setSelectedCard(null);  
     setStep("intro");       
   };
+  const handleNextStep = (nextStep) => {
+  setProgress((prev) => Math.min(prev + 30, 100)); // prevent going beyond 100
+  setStep(nextStep);
+};
+
   
   return (
     <div className="demo">
@@ -66,10 +84,11 @@ const Demo = () => {
       )}
 
       {step === "request" && (
-        <DemoRequest 
-          onBack={() => setStep("intro")} 
-          onNext={() => setStep("rd")} 
-        />
+      <DemoRequest 
+  onBack={() => setStep("intro")} 
+  onNext={() => handleNextStep("rd")} 
+  progress={progress}
+/>
       )}
 
       {step === "rd" && (
@@ -93,10 +112,11 @@ const Demo = () => {
         />
       )}
 
-      {step === "completeForm" && (
-        <CompleteForm onBack={() => setStep("intro")} />
-      )}
+     {step === "completeForm" && (
+  <CompleteForm onBack={() => setStep("intro")} onDone={handleDone} />
+)}
 
+     {showPop && <Pop />}
     </div>
   );
 };

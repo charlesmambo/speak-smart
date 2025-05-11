@@ -50,9 +50,20 @@
   }
 
   
-  .demo-g{
-    width: 30% !important;
+@keyframes growWidth {
+  from {
+    width: 0;
   }
+  to {
+    width: 30%;
+  }
+}
+
+.demo-g {
+  animation: growWidth 1s ease-in-out forwards;
+}
+
+
   
   .grade-item {
     padding: 10px 16px;

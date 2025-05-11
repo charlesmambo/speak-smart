@@ -4,8 +4,17 @@
 .persona-container{
   width: 62vw;
 }
+@keyframes growWidth3 {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
 .pers-bar{
-  width: 60% !important;
+  animation: growWidth3 1s ease-in-out forwards;
 }
 .persona h2{
     font-weight: 700;

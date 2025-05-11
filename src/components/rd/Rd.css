@@ -39,12 +39,24 @@ position: relative;
 }
 .range-bar{
     height: 100%;
-    width: 50%;
+    /* width: 50%; */
     background-color: #EE552C;
 }
-.sub-bar{
-  width: 50% !important;
+
+@keyframes growWidth2 {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 50%;
+  }
 }
+
+.sub-bar {
+  animation: growWidth2 1s ease-in-out forwards;
+}
+
+
 .rd-btns{
     margin-top: 1rem;
     display: flex;

@@ -11,6 +11,10 @@ const grades = [
 const DemoRequest = ({ onBack, onNext }) => {
   const [selectedGrade, setSelectedGrade] = useState(null);
 
+    const handleNext = () => {
+    setProgress(true);       // step 2
+    onNext();                // step 3 (optional: keep this if needed)
+  };
   return (
     <div className="dmr">
     <div className='rd-wrapper'>

@@ -7,6 +7,16 @@
     font-size: 1.8rem;
     font-family: "Montserrat", sans-serif;
 }
-.stud-bar{
-    width: 75% !important;
+
+  @keyframes growWidth4 {
+  from {
+    width: 60%;
   }
+  to {
+    width: 75%;
+  }
+}
+
+.stud-bar{
+  animation: growWidth4 1s ease-in-out forwards;
+}

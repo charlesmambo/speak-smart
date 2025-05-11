@@ -17,9 +17,20 @@
     background-color: #344b64;
     transform: scale(1.05);
 }
-.complete-range-bar{
+
+  @keyframes growWidth5 {
+  from {
+    width: 75%;
+  }
+  to {
     width: 100%;
+  }
 }
+
+.complete-range-bar{
+  animation: growWidth5 1s ease-in-out forwards;
+}
+
 .form-control-wrapper{
     margin-top: 1.8rem;
     display: flex;

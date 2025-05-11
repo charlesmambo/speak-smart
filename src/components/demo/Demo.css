@@ -1,6 +1,7 @@
 .demo{
     padding: 1rem  4.5rem; 
     color: #304560;
+    position: relative;
 }
 .demo-card-wrapper{
     display: flex;
