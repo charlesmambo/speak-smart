@@ -12,6 +12,7 @@ import Contact from './components/contact/Contact'
 import Divider from './components/divider/Divider'
 import Footer from './components/footer/Footer'
 import Demo from './components/demo/Demo'
+import ImageSection from './components/imageSection/ImageSection'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
      <Improve/>
      <Course/>
      <Feedback/>
+     <ImageSection/>
      <Demo/>
      <Qn/>
      <Contact/>
