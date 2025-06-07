@@ -1,8 +1,8 @@
-import React from 'react';
-import '../rd/Rd.css';
+import React, { useState } from "react";
+import "../rd/Rd.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Rd = ({ onBack, onNext  }) => {
+const Rd = ({ onBack, onNext, onReset }) => {
   const subjects = [
     "English",
     "Maths",
@@ -13,21 +13,44 @@ const Rd = ({ onBack, onNext  }) => {
     "Social Sciences",
     "Technology",
     "Life Orientation",
-    "Isizulu"
+    "Isizulu",
   ];
 
   const splitSubjects = [subjects.slice(0, 5), subjects.slice(5)];
 
+  const [selectedSubjects, setSelectedSubjects] = useState([]);
+
+
+let clickCount = 0;
+const handleCheckboxChange = (subject) => {
+  clickCount++;
+  console.log(`Clicked ${clickCount} times`);
+  setSelectedSubjects((prev) => {
+    const updated = prev.includes(subject)
+      ? prev.filter((s) => s !== subject)
+      : [...prev, subject];
+    console.log("Selected subjects in Rd:", updated);
+    return updated;
+  });
+};
+
+
+const handleNextClick = () => {
+  console.log("Next clicked with subjects:", selectedSubjects);
+  onNext(selectedSubjects);
+};
+
+
   return (
-    <div className='rd'>
-      <div className='rd-wrapper'>
+    <div className="rd">
+      <div className="rd-wrapper">
         <div className="rd-title-container">
           <div className="rd-title">
             <h2>Requesting a Demo</h2>
             <p>Answer the following questions to reach the right path</p>
           </div>
           <div className="demo-request-icon">
-          <AiOutlineCloseCircle className='close-icon' onClick={onBack} />
+            <AiOutlineCloseCircle className="close-icon" onClick={onReset} />
           </div>
         </div>
 
@@ -42,7 +65,11 @@ const Rd = ({ onBack, onNext  }) => {
               <div className="checkbox-container" key={index}>
                 {group.map((subject, i) => (
                   <label className="checkbox-label" key={i}>
-                    <input type="checkbox" />
+                    <input
+                      type="checkbox"
+                      checked={selectedSubjects.includes(subject)}
+                      onChange={() => handleCheckboxChange(subject)}
+                    />
                     <span className="checkmark"></span>
                     {subject}
                   </label>
@@ -57,7 +84,9 @@ const Rd = ({ onBack, onNext  }) => {
             Back
           </div>
           <div className="demo-btn rd-btn2">
-            <button type="submit" onClick={onNext}>next</button>
+            <button type="button" onClick={handleNextClick}>
+              Next
+            </button>
           </div>
         </div>
       </div>

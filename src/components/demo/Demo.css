@@ -2,6 +2,7 @@
     padding: 1rem  4.5rem; 
     color: #304560;
     position: relative;
+    margin-top: 2rem;
 }
 .demo-card-wrapper{
     display: flex;
@@ -75,6 +76,44 @@
 }
 .border-blue{
    border-color: #3771C8; 
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-weight: 500;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+.success-popup {
+  background-color: #4caf50; /* green */
+}
+
+.warning-popup {
+  background-color: #f44336; /* red */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from "react";
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Intro from './components/intro/Intro'
@@ -12,21 +12,22 @@ import Contact from './components/contact/Contact'
 import Divider from './components/divider/Divider'
 import Footer from './components/footer/Footer'
 import Demo from './components/demo/Demo'
-import ImageSection from './components/imageSection/ImageSection'
+// import ImageSection from './components/imageSection/ImageSection'
 
 function App() {
+  const demoRef = useRef(null);
 
   return (
     <>
      <Navbar/>
-     <Intro/>
+    <Intro scrollToDemo={() => demoRef.current?.scrollIntoView({ behavior: 'smooth' })} />
      <Offer/>
      <About/>
      <Improve/>
      <Course/>
      <Feedback/>
-     <ImageSection/>
-     <Demo/>
+     {/* <ImageSection/> */}
+     <Demo ref={demoRef} />
      <Qn/>
      <Contact/>
      <Divider/>

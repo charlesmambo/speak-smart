@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "../completeForm/CompleteForm.css";
 
 const CompleteForm = ({ onBack, onDone }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [error, setError] = useState("");
+
   const handleDone = (e) => {
-    e.preventDefault(); 
-    onBack(); 
-       if (onDone) onDone();
+    e.preventDefault();
+
+    if (!name.trim()) {
+      setError("Please enter your name.");
+      return;
+    }
+    if (!email.trim()) {
+      setError("Please enter your email address.");
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+    if (!phone.trim()) {
+      setError("Please enter your phone number.");
+      return;
+    }
+
+    setError("");
+
+    // Log or handle collected data
+    console.log("Form submission:", { name, email, phone });
+
+    // Only call onDone after validation
+    if (onDone) onDone({ name, email, phone });
   };
 
   return (
@@ -26,20 +55,37 @@ const CompleteForm = ({ onBack, onDone }) => {
           <div className="form-control-wrapper">
             <div className="complete-form-control">
               <p>What’s your name?</p>
-              <input type="text" placeholder="Enter your name" />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div className="complete-form-control">
               <p>What’s your email address?</p>
-              <input type="text" placeholder="Enter your email address" />
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
             <div className="complete-form-control">
               <p>What’s your phone number?</p>
-              <input type="text" placeholder="+27 624 286 152" />
+              <input
+                type="text"
+                placeholder="+27 624 286 152"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
             </div>
           </div>
 
+          {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
+
           <div className="complete">
-            <button type="button" onClick={handleDone}>
+            <button type="button" onClick={handleDone} style={{ marginLeft: "1rem" }}>
               Done
             </button>
           </div>
