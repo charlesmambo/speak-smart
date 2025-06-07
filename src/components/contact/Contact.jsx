@@ -12,6 +12,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   const validate = () => {
     const newErrors = {};
@@ -46,7 +47,7 @@ const Contact = () => {
       setErrors(validationErrors);
     } else {
       console.log("Form submitted:", formData);
-      alert("Message sent successfully!");
+
       setFormData({
         name: '',
         email: '',
@@ -54,6 +55,9 @@ const Contact = () => {
         subject: '',
         message: ''
       });
+
+      setShowSuccessPopup(true);
+      setTimeout(() => setShowSuccessPopup(false), 3000); // hide after 3s
     }
   };
 
@@ -66,6 +70,7 @@ const Contact = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
+        {/* form inputs */}
         <div className="input-wrapper">
           <div className="form-control">
             <input 
@@ -114,7 +119,7 @@ const Contact = () => {
 
         <div className="form-contro">
           <textarea 
-          className='textarea'
+            className='textarea'
             name="message" 
             placeholder='Write a message...' 
             value={formData.message}
@@ -127,6 +132,13 @@ const Contact = () => {
           <button type="submit">Send a Message</button>
         </div>
       </form>
+
+      {/* Success Popup */}
+      {showSuccessPopup && (
+        <div className="success-popup">
+          <p>Thank you! Your message has been sent successfully.</p>
+        </div>
+      )}
     </div>
   );
 };

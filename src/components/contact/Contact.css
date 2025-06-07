@@ -85,6 +85,29 @@ form{
   margin-top: 4px;
   display: block;
 }
+.success-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4BB543; /* nice green */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-weight: 400;
+  z-index: 1000;
+  font-size: 1rem;
+  animation: fadeInOut 3s forwards;
+}
+
+/* optional fade animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
 
 @media only screen and (max-width: 600px){
     .contact{
@@ -111,4 +134,19 @@ form{
 .contact-heading {
  width: 98%;
   }
+  .success-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  background-color: #4BB543; /* nice green */
+  color: white;
+  padding: 15px 18px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-weight: 400;
+  z-index: 1000;
+  font-size: 1rem;
+  animation: fadeInOut 3s forwards;
+}
 }
